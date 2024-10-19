@@ -76,6 +76,7 @@ a {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+
 .header-list {
   display: flex;
   align-items: center;
@@ -87,6 +88,28 @@ a {
    margin-right: auto;
  }
 
+ .logo {
+  font-family:"Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  margin-right: 76px
+}
+
+.logo-pic {
+color: #2e2f42;
+font-family:"Raleway", sans-serif;
+font-size: 18px;
+font-weight: 700;
+line-height: 1.5;
+letter-spacing: 0.02em;
+text-align: left;
+}
+
  .header-navigation-list {
    display: flex;
    align-items: center;
@@ -97,35 +120,14 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .list-item {
- transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ .active {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-item:last-child {
 	margin-right: 0 
 }
 
-.logo {
-   font-family:"Raleway", sans-serif;
-   font-size: 18px;
-   font-weight: 700;
-   line-height: 1.17;
-   letter-spacing: 0.03em;
-   text-align: left;
-   text-transform: uppercase;
-   color: #4d5ae5;
-   margin-right: 76px
-}
-
- .logo-pic {
-color: #2e2f42;
-font-family:"Raleway", sans-serif;
-font-size: 18px;
-font-weight: 700;
-line-height: 1.5;
-letter-spacing: 0.02em;
-text-align: left;
-}
 
 .header-navigation-list {
   display: flex;
@@ -145,13 +147,10 @@ text-align: left;
 text-decoration: none;
 padding: 24px 0;
 position: relative;
-transition-property: color, text-decoration;
 transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.active {
-  color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .active::after {
   content: "";
@@ -430,9 +429,14 @@ text-align: left;
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
+.our-portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+  0px 1px 1px rgba(46, 47, 66, 0.16), 
+  0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .our-portfolio-item:hover .portfolio-cover-item {
   transform: translateY(0);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-card-cover {
